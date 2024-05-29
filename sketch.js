@@ -107,7 +107,7 @@ function draw() {
   stroke("white")
   
   image(bg,0,0,700,400)
-  image(g,-80+windowWidth/2,130,165,115)
+  image(g,-80+350,130,165,115)
   image(logo1,640,8,50,50)
   image(logo2,580,5,58,58)
   image(p,240,510,200,60)
@@ -116,24 +116,24 @@ function draw() {
   textStyle(BOLD)
   fill("black")
   textFont(f)
-  text("SIMULASI SIR",windowWidth/2,70)
+  text("SIMULASI SIR",350,70)
   
   textSize(25)
-  text("SUSPECTIBLE-INFECTED-RECOVERED",windowWidth/2,110)
+  text("SUSPECTIBLE-INFECTED-RECOVERED",350,110)
   
   textSize(18)
   stroke("white")
   fill("black")
-  text("Anggota Kelompok 8: ",windowWidth/2,260)
+  text("Anggota Kelompok 8: ",350,260)
  
   textSize(15)
   text("mata kuliah: visualisasi dalam sains",150,10)
-  text("Anggi Sephia Febriyani-122160018 ",windowWidth/2,290)
-  text("Nazwa Wulan Dini-122160020 ",windowWidth/2,306)
-  text("Imelda Nurul Alfiah-122160025 ",windowWidth/2,322)
-  text("Melza Kurnia Fadhila-122160026 ",windowWidth/2,338)
-  text("Fauziah Ana Nabila-122160027 ",windowWidth/2,354)
-  text("Matematika-itera",windowWidth/2,375)
+  text("Anggi Sephia Febriyani-122160018 ",350,290)
+  text("Nazwa Wulan Dini-122160020 ",350,306)
+  text("Imelda Nurul Alfiah-122160025 ",350,322)
+  text("Melza Kurnia Fadhila-122160026 ",350,338)
+  text("Fauziah Ana Nabila-122160027 ",350,354)
+  text("Matematika-itera",350,375)
   
   fill("white")
   noStroke()
@@ -186,13 +186,13 @@ function draw() {
   }
 
   // grafik dalam box
-  stroke(255, 0, 0); // Red for Susceptibles
+  stroke(255, 0, 0); 
   drawGraph(S, boxX, boxY, boxWidth, boxHeight, 'Susceptibles');
   
-  stroke(0, 255, 0); // Green for Infectious
+  stroke(0, 255, 0); 
   drawGraph(I, boxX, boxY, boxWidth, boxHeight, 'Infectious');
   
-  stroke(0, 0, 255); // Blue for Recovereds
+  stroke(0, 0, 255); 
   drawGraph(R, boxX, boxY, boxWidth, boxHeight, 'Recovereds');
   
   // legend
